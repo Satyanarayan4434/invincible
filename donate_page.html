@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Invincible</title>
+    <style>
+      .bg-custom {
+        background-image: linear-gradient(
+            90deg,
+            #208882 0%,
+            rgba(32, 136, 130, 0) 61.88%
+          ),
+          linear-gradient(270deg, #208882 15.63%, rgba(253, 253, 253, 0) 100%);
+      }
+      .pink-blur {
+        position: absolute;
+        width: 580px;
+        height: 546px;
+        left: -119px;
+        top: 400px;
+        background: #ab178a;
+        filter: blur(250px);
+      }
+      .blue-blur {
+        position: absolute;
+        width: 472px;
+        height: 450px;
+        left: 812px;
+        top: 317px;
+
+        background: #1289ae;
+        filter: blur(250px);
+      }
+      .pink-blur-1 {
+        position: absolute;
+        width: 580px;
+        height: 546px;
+        left: -119px;
+        top: -400px;
+        background: #ab178a;
+        filter: blur(250px);
+        z-index: -10;
+      }
+      .blue-blur-2 {
+        position: absolute;
+        width: 472px;
+        height: 450px;
+        left: 812px;
+        top: -117px;
+
+        background: #1289ae;
+        filter: blur(250px);
+      }
+      .corefeaturesection {
+        background-size: 100% 70%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+      .bg-custom-1 {
+        background-color: rgba(0, 147, 138, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="overflow-x-hidden relative w-full">
+      <nav class="bg-custom">
+        <div
+          class="relative w-[1080px] mx-auto flex items-center justify-between pt-4 pb-4"
+        >
+          <img src="./Assets//logo.svg" alt="" width="125px" height="35px" />
+          <div>
+            <ul class="flex space-x-6 items-center">
+              <a
+                href="index.html"
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Home
+              </a>
+              <li
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Join Us
+              </li>
+              <li
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Learn to Manage Waste
+              </li>
+              <li
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Our Pride
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex space-x-6 items-center">
+            <button
+              class="py-3 px-5 font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+              Log in
+            </button>
+            <button
+              class="py-3 px-5 font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- section-1  -->
+    <section class="relative">
+      <img
+        src="./Assets/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute -top-[5rem] left-[5rem] inline-block -z-10"
+      />
+
+      <img
+        src="./Assets/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute top-[25rem] right-0 inline-block rotate-180"
+      />
+      <div class="pink-blur"></div>
+      <div class="blue-blur"></div>
+      <div
+        class="overflow-x-hidden relative w-full mt-[50px] flex flex-col justify-center items-center"
+      >
+        <h1 class="mb-[10px] text-deepBlue font-mullish text-4xl">
+          Join Us
+        </h1>
+        <div class="mb-[30px] w-[50px] h-[4px] bg-deepBlue"></div>
+        <div
+          class="w-[1080px] mx-auto min-h-[320px] rounded-xl relative p-10 py-12 stroke-gray-400 shadow-md mb-5 bg-white"
+        >
+          <div class="flex items-center justify-center  gap-40">
+            
+            <form action="submit.php" method="post" class="flex flex-col items-center ">
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                  Name :
+                </label>
+                <input name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                  Email :
+                </label>
+                <input name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="phone_no">
+                  Phone no :
+                </label>
+                <input name="phone_no" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone_no" type="text" placeholder="Phone no">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="address">
+                  Address : 
+                </label>
+                <input name="address" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Address">
+              </div>
+              <div>
+                <button name="submit"
+                type="submit" value="Submit"
+                class="py-3 px-5 font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+              Register Here 
+              </button>
+              </div>
+            </form>
+            <img src="./Assets/Donate page IMG.jpeg" alt="" width="308" height="511" class="rounded-xl opacity-90 shadow-md">
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- section-2 -->
+      <section class="w-full bg-custom">
+        <div class="relative w-[1080px] mx-auto flex py-20 justify-between mt-11 min-h-[370px]">
+          <div class="flex flex-col justify-center space-y-4">
+              <img src="./Assets//logo.svg" alt="" width="125px" height="35px" class="ml-2"/>
+              <ul class="flex flex-col space-y-4">
+                  <li class="flex  items-center gap-2">
+                      <img src="./Assets/Facebook Circled.png" alt="" width="40px" height="40px">
+                      <p class="font-mullish font-semibold text-white">@invincible_fb_page</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      <img src="./Assets/Instagram.png" alt="" width="40px" height="40px">
+                      <p class="font-mullish font-semibold text-white">@invincible_insta_page</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      <img src="./Assets/LinkedIn.png" alt="" width="40px" height="40px">
+                      <p class="font-mullish font-semibold text-white">@invincible_linkedIn_page</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      <img src="./Assets/YouTube.png" alt="" width="40px" height="40px">
+                      <p class="font-mullish font-semibold text-white">@invincible_youtube_page</p>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <ul class="flex flex-col space-y-8">
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-2xl text-white">Our Branches</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      
+                      <p class="font-mullish font-semibold text-white">Kolkata Branch</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-white">Bhubaneswar Branch</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-white">Mumbai Brach</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      
+                      <p class="font-mullish font-semibold text-white">Delhi Branch</p>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <ul class="flex flex-col space-y-8">
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-2xl text-white">Learn</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      
+                      <p class="font-mullish font-semibold text-white">Plastic Waste</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-white">Electronic Waste</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-white">Organic Waste</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      
+                      <p class="font-mullish font-semibold text-white">construction and Demolition Waste</p>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <ul class="flex flex-col space-y-8">
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-2xl text-white">Address</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                      
+                      <p class="font-mullish font-semibold text-white">Baleshwar, Chunavati,</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-white">Ranipatna, Odisha</p>
+                  </li>
+                  <li class="flex  items-center gap-2">
+                     
+                      <p class="font-mullish font-semibold text-white">756001</p>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>

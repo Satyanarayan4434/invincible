@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Invincible</title>
+    <style>
+      .bg-custom {
+        background-image: linear-gradient(
+            90deg,
+            #208882 0%,
+            rgba(32, 136, 130, 0) 61.88%
+          ),
+          linear-gradient(270deg, #208882 15.63%, rgba(253, 253, 253, 0) 100%);
+      }
+      .pink-blur {
+        position: absolute;
+        width: 580px;
+        height: 546px;
+        left: -119px;
+        top: 400px;
+        background: #ab178a;
+        filter: blur(250px);
+      }
+      .blue-blur {
+        position: absolute;
+        width: 472px;
+        height: 450px;
+        left: 812px;
+        top: 317px;
+
+        background: #1289ae;
+        filter: blur(250px);
+      }
+      .pink-blur-1 {
+        position: absolute;
+        width: 580px;
+        height: 546px;
+        left: -119px;
+        top: -400px;
+        background: #ab178a;
+        filter: blur(250px);
+        z-index: -10;
+      }
+      .blue-blur-2 {
+        position: absolute;
+        width: 472px;
+        height: 450px;
+        left: 812px;
+        top: -117px;
+
+        background: #1289ae;
+        filter: blur(250px);
+      }
+      .corefeaturesection {
+        background-size: 100% 70%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+      .bg-custom-1{
+        background-color: rgba(0, 147, 138, 1);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overflow-x-hidden relative w-full">
+      <!-- navbar -->
+
+      <nav class="bg-custom">
+        <div
+          class="relative w-[1080px] mx-auto flex items-center justify-between pt-4 pb-4"
+        >
+          <img src="./Assets//logo.svg" alt="" width="125px" height="35px" />
+          <div>
+            <ul class="flex space-x-6 items-center">
+              <a href="index.html"
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Home
+              </a>
+              <li
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Join Us
+              </li>
+              <li
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Learn to Manage Waste
+              </li>
+              <li
+                class="text-white font-mullish hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Our Pride
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex space-x-6 items-center">
+            <a href="donate_page.html"
+              class="py-3 px-5 font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+              Log in
+            </a>
+            <a href="sign_up.html"
+              class="py-3 px-5 font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- section-1 -->
+    <section>
+      <div class="pink-blur"></div>
+      <div class="blue-blur"></div>
+      <div class="overflow-x-hidden relative w-full mt-10">
+        <div
+          class="w-[1080px] mx-auto min-h-[520px] flex rounded-md relative p-10 py-12"
+        >
+          <div class="flex items-center gap-10">
+            <div class="flex flex-col space-y-5">
+              <h1 class="text-deepBlue font-mullish text-4xl">Our Vision</h1>
+              <div class="w-[50px] h-[4px] bg-deepBlue"></div>
+              <p class="text-deepBlue font-mullish">
+                Our vision is to create a world where organic waste is no longer
+                a problem, but instead, is seen as a valuable resource. We
+                believe that composting is the key to achieving this vision.
+                Composting is a simple, natural, and effective way to reduce the
+                amount of organic waste that ends up in landfills. It transforms
+                food scraps, yard waste, and other organic materials into a
+                nutrient-rich soil amendment that can be used to grow healthy
+                plants, reduce the need for synthetic fertilizers, and improve
+                soil health.
+              </p>
+              <button
+                class="py-3 px-5 max-w-[150px] font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+              >
+                Join Now
+              </button>
+            </div>
+            <img
+              src="./Assets/Hero-image 1.png"
+              alt=""
+              width="446px"
+              height="266px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-2 -->
+    <section class="relative">
+      <img
+        src="./Assets/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute -top-[5rem] left-[5rem] inline-block -z-10"
+      />
+
+      <img
+        src="./Assets/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute top-[25rem] right-0 inline-block rotate-180"
+      />
+
+      <div
+        class="overflow-x-hidden relative w-full mt-[50px] flex flex-col justify-center items-center"
+      >
+        <h1 class="mb-[10px] text-deepBlue font-mullish text-4xl">
+          Donate Your Waste To Us
+        </h1>
+        <div class="mb-[30px] w-[50px] h-[4px] bg-deepBlue"></div>
+        <div
+          class="w-[1080px] mx-auto min-h-[320px] rounded-xl relative p-10 py-12 stroke-gray-400 mb-5 bg-white "
+        >
+          <div class="flex flex-col items-center space-y-9">
+            <div class="text-center opacity-90 font-mullish leading-8">
+                We collect Your organic waste and converting it into compost, By
+                Donating your waste you can not only help to reduce the amount of
+                waste that ends up in landfills, but also create a valuable resource
+                that can be used to improve soil health and support local
+                agriculture. Additionally, by selling the compost we produce from
+                your waste, we create new economic opportunities and help to reduce
+                unemployment in our community. However, we ensure that our
+                composting operation is conducted in an environmentally responsible
+                manner. This may include following proper composting techniques,
+                using appropriate equipment and infrastructure, and complying with
+                relevant regulations. By working together, we can create a cleaner,
+                healthier, and more sustainable world.
+              </div>
+              <button
+              class="py-3 px-5 max-w-[250px] font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+            Donate your waste
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!--Section-3-->
+     <section
+     class="w-full bg-[url(./Assets/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection"
+   >
+     <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+       <h2 class="font-mullish font-semibold text-3xl text-center text-white mt-20">
+        Learn waste management
+       </h2>
+       <div class="w-10 h-1 bg-white mx-auto mt-4"></div>
+       <div
+          class="w-[1080px] mx-auto min-h-[520px] flex rounded-md relative p-10 py-12"
+        >
+          <div class="flex items-center gap-10">
+            <img src="./Assets/Learn-IMG.jpeg" alt="" width="578" height="377" class="rounded-2xl opacity-90">
+            <div class="flex flex-col space-y-3 font-mullish font-bold text-white">
+                <div>Waste management refers to the collection, transport, processing, and disposal of waste materials.</div>
+                <div>Each type of waste management has its own benefits and drawbacks, and the most appropriate method will depend on the type of waste being managed and local conditions. </div>
+                <div>By using a combination of methods, communities can effectively manage their waste and minimize its impact on the environment.</div>
+                <button
+              class="py-3 px-5 max-w-[250px] font-mullish text-white bg-custom-1 border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+            Donate your waste
+            </button>
+            </div>
+          </div>
+        </div>
+       
+     </div>
+   </section>
+
+    <!-- section-4 -->
+    <section class="relative">
+        <div class="pink-blur-1"></div>
+        <div class="blue-blur-2"></div>
+        <img
+        src="./Assets/feature-section1-dottedrows.png"
+        alt=""
+        loading="lazy"
+        width="233"
+        height="167"
+        class="absolute -top-[5rem] left-[5rem] inline-block -z-10"
+      />
+
+    
+
+      <div
+        class="overflow-x-hidden relative w-full mt-[50px] flex flex-col justify-center items-center"
+      >
+        <h1 class="mb-[10px] text-deepBlue font-mullish text-4xl">
+            Order Free dustbin
+        </h1>
+        <div class="mb-[30px] w-[50px] h-[4px] bg-deepBlue"></div>
+        <div
+          class="w-[1080px] mx-auto  rounded-xl relative  stroke-gray-400 mb-5 bg-white opacity-80"
+        >
+          <div class="flex  items-center py-4 justify-center gap-20 ">
+            <div class="text-center opacity-90 font-mullish leading-8 text-2xl">
+                This Dustbin only used for organic waste
+              </div>
+              <button
+              class="py-3 px-5 max-w-[250px] font-mullish text-white bg-deepBlueHead border-none rounded-md text-sm font-bold hover:text-deepBlue cursor-pointer transition-all duration-200"
+            >
+            Donate your waste
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-5 -->
+    <section class="w-full bg-custom">
+      <div class="relative w-[1080px] mx-auto flex py-20 justify-between mt-11 min-h-[370px]">
+        <div class="flex flex-col justify-center space-y-4">
+            <img src="./Assets//logo.svg" alt="" width="125px" height="35px" class="ml-2"/>
+            <ul class="flex flex-col space-y-4">
+                <li class="flex  items-center gap-2">
+                    <img src="./Assets/Facebook Circled.png" alt="" width="40px" height="40px">
+                    <p class="font-mullish font-semibold text-white">@invincible_fb_page</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    <img src="./Assets/Instagram.png" alt="" width="40px" height="40px">
+                    <p class="font-mullish font-semibold text-white">@invincible_insta_page</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    <img src="./Assets/LinkedIn.png" alt="" width="40px" height="40px">
+                    <p class="font-mullish font-semibold text-white">@invincible_linkedIn_page</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    <img src="./Assets/YouTube.png" alt="" width="40px" height="40px">
+                    <p class="font-mullish font-semibold text-white">@invincible_youtube_page</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex flex-col space-y-8">
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-2xl text-white">Our Branches</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    
+                    <p class="font-mullish font-semibold text-white">Kolkata Branch</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-white">Bhubaneswar Branch</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-white">Mumbai Brach</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    
+                    <p class="font-mullish font-semibold text-white">Delhi Branch</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex flex-col space-y-8">
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-2xl text-white">Learn</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    
+                    <p class="font-mullish font-semibold text-white">Plastic Waste</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-white">Electronic Waste</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-white">Organic Waste</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    
+                    <p class="font-mullish font-semibold text-white">construction and Demolition Waste</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex flex-col space-y-8">
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-2xl text-white">Address</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                    
+                    <p class="font-mullish font-semibold text-white">Baleshwar, Chunavati,</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-white">Ranipatna, Odisha</p>
+                </li>
+                <li class="flex  items-center gap-2">
+                   
+                    <p class="font-mullish font-semibold text-white">756001</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
